@@ -9,7 +9,7 @@ import re
 def filter_digits(text):
     lines = text.splitlines()
     filtered = [line for line in lines if not re.match(r'^\d+$', line.strip())]
-    return "\n".join(filtered)
+    return "\n\n".join(filtered)
 
 def clean_text(text):
     text = filter_digits(text)
